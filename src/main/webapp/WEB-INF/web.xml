@@ -17,7 +17,14 @@
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
-
+<servlet>
+    <servlet-name>JoiningExample</servlet-name>
+    <servlet-class>com.mkyong.client.ClientServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>JoiningExample</servlet-name>
+    <url-pattern></url-pattern>
+</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>jersey-serlvet</servlet-name>
 		<url-pattern>/rest/*</url-pattern>
