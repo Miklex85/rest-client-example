@@ -36,16 +36,18 @@ public class JerseyClientGet {
 	}
 
         public String consultarServicio() {
-                String respuesta = null; 
+                String respuesta = null;
+                String url = "";
 		try {
 
 			Client client = Client.create();
 
                         String servicio = System.getenv("REST_SERVICE_NAME");
-			WebResource webResource = client.resource(servicio);
+                        url = ("http://" + servicio + "/SpringRestfulWebServicesWithJSONExample/countries");
+                        System.out.println("URL: " + url);
+			WebResource webResource = client.resource("http://" + servicio + "/SpringRestfulWebServicesWithJSONExample/countries");
 
-			ClientResponse response = webResource.accept("application/json")
-					.get(ClientResponse.class);
+			ClientResponse response = webResource.accept("application/json").get(ClientResponse.class);
 
 			if (response.getStatus() != 200) {
 				respuesta = ("Oops, Parece que se alcanza el servicio " + servicio + " : HTTP error code : " + response.getStatus());
@@ -57,8 +59,8 @@ public class JerseyClientGet {
 			System.out.println(respuesta);
 
 		} catch (Exception e) {
+                        System.out.println("URL: " + url);
 			e.printStackTrace();
-
 		} finally {
                    return respuesta;
                 }
