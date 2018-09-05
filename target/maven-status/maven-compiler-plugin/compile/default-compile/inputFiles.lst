@@ -1,5 +1,3 @@
-/home/miklex/Descargas/RESTfulExample/src/main/java/com/mkyong/Track.java
-/home/miklex/Descargas/RESTfulExample/src/main/java/com/mkyong/rest/JSONService.java
-/home/miklex/Descargas/RESTfulExample/src/main/java/com/mkyong/client/JerseyClientGet.java
-/home/miklex/Descargas/RESTfulExample/src/main/java/com/mkyong/client/JerseyClientPost.java
-/home/miklex/Descargas/RESTfulExample/src/main/java/com/mkyong/client/ClientServlet.java
+/home/miklex/Proyectos/Nuuptech/Red Hat/BANREGIO/demos/rest-client-example/src/main/java/com/mkyong/client/JerseyClientPost.java
+/home/miklex/Proyectos/Nuuptech/Red Hat/BANREGIO/demos/rest-client-example/src/main/java/com/mkyong/client/JerseyClientGet.java
+/home/miklex/Proyectos/Nuuptech/Red Hat/BANREGIO/demos/rest-client-example/src/main/java/com/mkyong/client/ClientServlet.java

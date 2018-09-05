@@ -3,24 +3,13 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
 	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 	<display-name>Restful Web Application</display-name>
-
-	<servlet>
-		<servlet-name>jersey-serlvet</servlet-name>
-		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
-		<init-param>
-			<param-name>com.sun.jersey.config.property.packages</param-name>
-			<param-value>com.mkyong.rest</param-value>
-		</init-param>
-		<init-param>
-			<param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
-			<param-value>true</param-value>
-		</init-param>
-		<load-on-startup>1</load-on-startup>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>jersey-serlvet</servlet-name>
-		<url-pattern>/rest/*</url-pattern>
-	</servlet-mapping>
+<servlet>
+    <servlet-name>JoiningExample</servlet-name>
+    <servlet-class>com.mkyong.client.ClientServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>JoiningExample</servlet-name>
+    <url-pattern></url-pattern>
+</servlet-mapping>
 
 </web-app>
